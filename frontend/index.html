@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKYCAST</title>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""
+    >
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-mode="light" data-temp-tone="mild">
+    <aside class="corner-clock" aria-label="Current time">
+        <div class="clock-shell">
+            <div class="clock-header">
+                <span class="clock-kicker">Live Time</span>
+                <span class="clock-dot"></span>
+            </div>
+            <div class="clock-face">
+                <span class="clock-ring clock-ring-outer"></span>
+                <span class="clock-ring clock-ring-inner"></span>
+                <span class="clock-mark mark-12"></span>
+                <span class="clock-mark mark-3"></span>
+                <span class="clock-mark mark-6"></span>
+                <span class="clock-mark mark-9"></span>
+                <span id="clock-hour" class="clock-hand hour-hand"></span>
+                <span id="clock-minute" class="clock-hand minute-hand"></span>
+                <span id="clock-second" class="clock-hand second-hand"></span>
+                <span class="clock-center"></span>
+            </div>
+            <div class="clock-meta">
+                <div id="clock-digital" class="clock-digital">00:00:00</div>
+                <div id="clock-date" class="clock-date">Wednesday, Apr 22</div>
+            </div>
+        </div>
+    </aside>
+    <main class="page-shell">
+        <section class="container">
+            <header class="hero-header">
+                <div class="hero-copy-block">
+                    <div class="brand-lockup">
+                        <div class="brand-logo" aria-hidden="true">
+                            <span class="brand-orbit"></span>
+                            <span class="brand-core"></span>
+                            <span class="brand-wave brand-wave-one"></span>
+                            <span class="brand-wave brand-wave-two"></span>
+                        </div>
+                        <div class="brand-wordmark">
+                            <span class="brand-tag">Atmospheric Intelligence</span>
+                            <span class="brand-name">SKYCAST</span>
+                        </div>
+                    </div>
+                    <p class="eyebrow">Global Forecast Explorer</p>
+                    <h1>SKYCAST</h1>
+                    <p class="lead">
+                        Search by place name or click anywhere on the map to inspect live weather, forecast behavior,
+                        cloud trends, and wind signals.
+                    </p>
+                    <div class="hero-ribbon">
+                        <div class="hero-pill">
+                            <span class="hero-pill-dot"></span>
+                            Real-time weather cockpit
+                        </div>
+                        <div class="hero-pill">
+                            <span class="hero-pill-dot"></span>
+                            Map, forecast, and timing in one view
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+                        <span class="theme-toggle-label">Dark mode</span>
+                    </button>
+                    <div id="theme-status" class="theme-status">Light mode · Mild theme</div>
+                </div>
+            </header>
+
+            <section class="search-stage">
+                <div class="form-row">
+                    <input id="city" type="text" placeholder="Search city, district, or region" autocomplete="off">
+                    <button id="search" type="button">Search</button>
+                    <button id="locate-me" class="ghost-button" type="button">Use My Location</button>
+                </div>
+
+                <div class="quick-searches" aria-label="Suggested searches">
+                    <button class="chip" type="button" data-city="Mumbai">Mumbai</button>
+                    <button class="chip" type="button" data-city="Delhi">Delhi</button>
+                    <button class="chip" type="button" data-city="London">London</button>
+                    <button class="chip" type="button" data-city="Tokyo">Tokyo</button>
+                    <button class="chip" type="button" data-city="Reykjavik">Reykjavik</button>
+                </div>
+
+                <div class="stage-meta">
+                    <p class="hint">Tap the map for any point on Earth. Search and map clicks both feed the same live forecast engine.</p>
+                    <div id="temperature-mood" class="temperature-mood">Theme responds to the selected place.</div>
+                </div>
+                <div class="signal-strip">
+                    <div id="search-signal" class="signal-tile">
+                        <span class="signal-label">Search</span>
+                        <strong>Ready</strong>
+                    </div>
+                    <div id="map-signal" class="signal-tile">
+                        <span class="signal-label">Map</span>
+                        <strong>Interactive</strong>
+                    </div>
+                    <div id="model-signal" class="signal-tile">
+                        <span class="signal-label">Forecast Model</span>
+                        <strong>Standby</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map-panel">
+                <div class="section-header">
+                    <div>
+                        <p class="label">Planet View</p>
+                        <h2>Interactive Weather Map</h2>
+                    </div>
+                    <p id="map-status" class="section-note">Click anywhere to inspect that point.</p>
+                </div>
+                <div class="map-toolbar">
+                    <div class="layer-group" aria-label="Map layer controls">
+                        <button class="layer-chip is-active" type="button" data-layer="clouds">Clouds</button>
+                        <button class="layer-chip" type="button" data-layer="precipitation">Rain</button>
+                        <button class="layer-chip" type="button" data-layer="wind">Wind</button>
+                        <button class="layer-chip" type="button" data-layer="temperature">Temp</button>
+                        <button class="layer-chip" type="button" data-layer="pressure">Pressure</button>
+                        <button class="layer-chip" type="button" data-layer="radar">Radar</button>
+                        <button class="layer-chip" type="button" data-layer="none">Overlay Off</button>
+                    </div>
+                    <div id="overlay-legend" class="overlay-legend" aria-live="polite"></div>
+                </div>
+                <div id="weather-map" class="weather-map" aria-label="Interactive world weather map"></div>
+            </section>
+
+            <section id="weather" class="weather-card empty-state" aria-live="polite">
+                <p>Search or click a map point to see current weather, forecast timing, cloud motion, and wind behavior.</p>
+            </section>
+
+            <section class="recent-panel">
+                <div class="recent-header">
+                    <h2>Recent Searches</h2>
+                    <button id="clear-history" class="ghost-button" type="button">Clear</button>
+                </div>
+                <div id="recent-searches" class="recent-searches"></div>
+            </section>
+        </section>
+    </main>
+
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>

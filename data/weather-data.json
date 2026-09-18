@@ -1,0 +1,368 @@
+﻿{
+  "cities": [
+    {
+      "name": "Mumbai",
+      "type": "city",
+      "country": "India",
+      "region": "Coastal",
+      "history": [
+        { "day": 1, "temp": 29, "humidity": 72, "description": "sunny" },
+        { "day": 2, "temp": 30, "humidity": 70, "description": "sunny" },
+        { "day": 3, "temp": 31, "humidity": 68, "description": "partly cloudy" },
+        { "day": 4, "temp": 32, "humidity": 69, "description": "sunny" },
+        { "day": 5, "temp": 31, "humidity": 71, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Delhi",
+      "type": "city",
+      "country": "India",
+      "region": "Plains",
+      "history": [
+        { "day": 1, "temp": 26, "humidity": 50, "description": "clear" },
+        { "day": 2, "temp": 28, "humidity": 48, "description": "clear" },
+        { "day": 3, "temp": 29, "humidity": 47, "description": "hot" },
+        { "day": 4, "temp": 30, "humidity": 45, "description": "hot" },
+        { "day": 5, "temp": 31, "humidity": 44, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Chennai",
+      "type": "city",
+      "country": "India",
+      "region": "Coastal",
+      "history": [
+        { "day": 1, "temp": 32, "humidity": 72, "description": "humid" },
+        { "day": 2, "temp": 33, "humidity": 70, "description": "sunny" },
+        { "day": 3, "temp": 34, "humidity": 68, "description": "hot" },
+        { "day": 4, "temp": 33, "humidity": 69, "description": "sunny" },
+        { "day": 5, "temp": 32, "humidity": 71, "description": "partly cloudy" }
+      ]
+    },
+    {
+      "name": "Bangalore",
+      "type": "city",
+      "country": "India",
+      "region": "Plateau",
+      "history": [
+        { "day": 1, "temp": 23, "humidity": 60, "description": "clear" },
+        { "day": 2, "temp": 24, "humidity": 58, "description": "sunny" },
+        { "day": 3, "temp": 25, "humidity": 57, "description": "pleasant" },
+        { "day": 4, "temp": 24, "humidity": 59, "description": "clear" },
+        { "day": 5, "temp": 23, "humidity": 61, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Kolkata",
+      "type": "city",
+      "country": "India",
+      "region": "Coastal",
+      "history": [
+        { "day": 1, "temp": 30, "humidity": 75, "description": "humid" },
+        { "day": 2, "temp": 31, "humidity": 74, "description": "cloudy" },
+        { "day": 3, "temp": 32, "humidity": 73, "description": "hot" },
+        { "day": 4, "temp": 31, "humidity": 74, "description": "partly cloudy" },
+        { "day": 5, "temp": 30, "humidity": 76, "description": "rainy" }
+      ]
+    },
+    {
+      "name": "Hyderabad",
+      "type": "city",
+      "country": "India",
+      "region": "Plateau",
+      "history": [
+        { "day": 1, "temp": 31, "humidity": 48, "description": "sunny" },
+        { "day": 2, "temp": 32, "humidity": 46, "description": "hot" },
+        { "day": 3, "temp": 33, "humidity": 45, "description": "clear" },
+        { "day": 4, "temp": 32, "humidity": 47, "description": "sunny" },
+        { "day": 5, "temp": 31, "humidity": 48, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Pune",
+      "type": "city",
+      "country": "India",
+      "region": "Plateau",
+      "history": [
+        { "day": 1, "temp": 29, "humidity": 45, "description": "clear" },
+        { "day": 2, "temp": 30, "humidity": 44, "description": "sunny" },
+        { "day": 3, "temp": 31, "humidity": 43, "description": "warm" },
+        { "day": 4, "temp": 30, "humidity": 45, "description": "clear" },
+        { "day": 5, "temp": 29, "humidity": 47, "description": "partly cloudy" }
+      ]
+    },
+    {
+      "name": "Jaipur",
+      "type": "city",
+      "country": "India",
+      "region": "Arid",
+      "history": [
+        { "day": 1, "temp": 35, "humidity": 30, "description": "hot" },
+        { "day": 2, "temp": 36, "humidity": 28, "description": "sunny" },
+        { "day": 3, "temp": 37, "humidity": 27, "description": "dry" },
+        { "day": 4, "temp": 36, "humidity": 29, "description": "clear" },
+        { "day": 5, "temp": 35, "humidity": 31, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Lucknow",
+      "type": "city",
+      "country": "India",
+      "region": "Plains",
+      "history": [
+        { "day": 1, "temp": 28, "humidity": 50, "description": "clear" },
+        { "day": 2, "temp": 29, "humidity": 48, "description": "sunny" },
+        { "day": 3, "temp": 30, "humidity": 46, "description": "warm" },
+        { "day": 4, "temp": 29, "humidity": 47, "description": "clear" },
+        { "day": 5, "temp": 28, "humidity": 49, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Ahmedabad",
+      "type": "city",
+      "country": "India",
+      "region": "Arid",
+      "history": [
+        { "day": 1, "temp": 34, "humidity": 35, "description": "hot" },
+        { "day": 2, "temp": 35, "humidity": 34, "description": "sunny" },
+        { "day": 3, "temp": 36, "humidity": 33, "description": "dry" },
+        { "day": 4, "temp": 35, "humidity": 34, "description": "clear" },
+        { "day": 5, "temp": 34, "humidity": 36, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Patna",
+      "type": "city",
+      "country": "India",
+      "region": "Plains",
+      "history": [
+        { "day": 1, "temp": 30, "humidity": 58, "description": "humid" },
+        { "day": 2, "temp": 31, "humidity": 56, "description": "cloudy" },
+        { "day": 3, "temp": 32, "humidity": 54, "description": "warm" },
+        { "day": 4, "temp": 31, "humidity": 55, "description": "clear" },
+        { "day": 5, "temp": 30, "humidity": 57, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Udaipur",
+      "type": "town",
+      "country": "India",
+      "region": "Arid",
+      "history": [
+        { "day": 1, "temp": 33, "humidity": 35, "description": "sunny" },
+        { "day": 2, "temp": 34, "humidity": 33, "description": "hot" },
+        { "day": 3, "temp": 35, "humidity": 32, "description": "hot" },
+        { "day": 4, "temp": 34, "humidity": 34, "description": "sunny" },
+        { "day": 5, "temp": 33, "humidity": 36, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Shimla",
+      "type": "town",
+      "country": "India",
+      "region": "Hill",
+      "history": [
+        { "day": 1, "temp": 16, "humidity": 68, "description": "cloudy" },
+        { "day": 2, "temp": 15, "humidity": 69, "description": "misty" },
+        { "day": 3, "temp": 17, "humidity": 66, "description": "sunny" },
+        { "day": 4, "temp": 18, "humidity": 64, "description": "clear" },
+        { "day": 5, "temp": 17, "humidity": 65, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Leh",
+      "type": "village",
+      "country": "India",
+      "region": "Mountain",
+      "history": [
+        { "day": 1, "temp": 7, "humidity": 24, "description": "clear" },
+        { "day": 2, "temp": 8, "humidity": 22, "description": "sunny" },
+        { "day": 3, "temp": 6, "humidity": 26, "description": "cold" },
+        { "day": 4, "temp": 7, "humidity": 25, "description": "clear" },
+        { "day": 5, "temp": 8, "humidity": 23, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Shirdi",
+      "type": "village",
+      "country": "India",
+      "region": "Arid",
+      "history": [
+        { "day": 1, "temp": 34, "humidity": 40, "description": "sunny" },
+        { "day": 2, "temp": 35, "humidity": 39, "description": "hot" },
+        { "day": 3, "temp": 36, "humidity": 38, "description": "dry" },
+        { "day": 4, "temp": 35, "humidity": 40, "description": "clear" },
+        { "day": 5, "temp": 34, "humidity": 41, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Kalpa",
+      "type": "village",
+      "country": "India",
+      "region": "Mountain",
+      "history": [
+        { "day": 1, "temp": 10, "humidity": 55, "description": "cold" },
+        { "day": 2, "temp": 11, "humidity": 53, "description": "clear" },
+        { "day": 3, "temp": 10, "humidity": 54, "description": "sunny" },
+        { "day": 4, "temp": 11, "humidity": 52, "description": "clear" },
+        { "day": 5, "temp": 12, "humidity": 50, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "London",
+      "type": "city",
+      "country": "United Kingdom",
+      "region": "Temperate",
+      "history": [
+        { "day": 1, "temp": 12, "humidity": 81, "description": "rainy" },
+        { "day": 2, "temp": 13, "humidity": 79, "description": "cloudy" },
+        { "day": 3, "temp": 14, "humidity": 78, "description": "cloudy" },
+        { "day": 4, "temp": 15, "humidity": 76, "description": "light rain" },
+        { "day": 5, "temp": 14, "humidity": 77, "description": "overcast" }
+      ]
+    },
+    {
+      "name": "Cairo",
+      "type": "city",
+      "country": "Egypt",
+      "region": "Desert",
+      "history": [
+        { "day": 1, "temp": 34, "humidity": 30, "description": "hot" },
+        { "day": 2, "temp": 35, "humidity": 28, "description": "sunny" },
+        { "day": 3, "temp": 36, "humidity": 27, "description": "dry" },
+        { "day": 4, "temp": 36, "humidity": 25, "description": "hot" },
+        { "day": 5, "temp": 35, "humidity": 29, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "New York",
+      "type": "city",
+      "country": "USA",
+      "region": "Temperate",
+      "history": [
+        { "day": 1, "temp": 18, "humidity": 60, "description": "clear" },
+        { "day": 2, "temp": 19, "humidity": 58, "description": "sunny" },
+        { "day": 3, "temp": 20, "humidity": 57, "description": "warm" },
+        { "day": 4, "temp": 20, "humidity": 56, "description": "clear" },
+        { "day": 5, "temp": 19, "humidity": 58, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Los Angeles",
+      "type": "city",
+      "country": "USA",
+      "region": "Mediterranean",
+      "history": [
+        { "day": 1, "temp": 24, "humidity": 55, "description": "sunny" },
+        { "day": 2, "temp": 25, "humidity": 53, "description": "clear" },
+        { "day": 3, "temp": 26, "humidity": 52, "description": "warm" },
+        { "day": 4, "temp": 25, "humidity": 54, "description": "clear" },
+        { "day": 5, "temp": 24, "humidity": 56, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Tokyo",
+      "type": "city",
+      "country": "Japan",
+      "region": "Temperate",
+      "history": [
+        { "day": 1, "temp": 21, "humidity": 65, "description": "clear" },
+        { "day": 2, "temp": 22, "humidity": 64, "description": "sunny" },
+        { "day": 3, "temp": 23, "humidity": 63, "description": "pleasant" },
+        { "day": 4, "temp": 22, "humidity": 64, "description": "clear" },
+        { "day": 5, "temp": 21, "humidity": 66, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Dubai",
+      "type": "city",
+      "country": "UAE",
+      "region": "Desert",
+      "history": [
+        { "day": 1, "temp": 40, "humidity": 20, "description": "hot" },
+        { "day": 2, "temp": 41, "humidity": 18, "description": "sunny" },
+        { "day": 3, "temp": 42, "humidity": 17, "description": "dry" },
+        { "day": 4, "temp": 41, "humidity": 19, "description": "clear" },
+        { "day": 5, "temp": 40, "humidity": 21, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Singapore",
+      "type": "city",
+      "country": "Singapore",
+      "region": "Equatorial",
+      "history": [
+        { "day": 1, "temp": 30, "humidity": 80, "description": "humid" },
+        { "day": 2, "temp": 31, "humidity": 79, "description": "rainy" },
+        { "day": 3, "temp": 30, "humidity": 81, "description": "cloudy" },
+        { "day": 4, "temp": 31, "humidity": 80, "description": "sunny" },
+        { "day": 5, "temp": 30, "humidity": 82, "description": "rainy" }
+      ]
+    },
+    {
+      "name": "Sydney",
+      "type": "city",
+      "country": "Australia",
+      "region": "Temperate",
+      "history": [
+        { "day": 1, "temp": 22, "humidity": 60, "description": "clear" },
+        { "day": 2, "temp": 23, "humidity": 58, "description": "sunny" },
+        { "day": 3, "temp": 24, "humidity": 57, "description": "warm" },
+        { "day": 4, "temp": 23, "humidity": 59, "description": "clear" },
+        { "day": 5, "temp": 22, "humidity": 61, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Moscow",
+      "type": "city",
+      "country": "Russia",
+      "region": "Continental",
+      "history": [
+        { "day": 1, "temp": 8, "humidity": 70, "description": "cloudy" },
+        { "day": 2, "temp": 9, "humidity": 68, "description": "clear" },
+        { "day": 3, "temp": 10, "humidity": 67, "description": "sunny" },
+        { "day": 4, "temp": 9, "humidity": 69, "description": "cool" },
+        { "day": 5, "temp": 8, "humidity": 71, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Beijing",
+      "type": "city",
+      "country": "China",
+      "region": "Continental",
+      "history": [
+        { "day": 1, "temp": 20, "humidity": 55, "description": "clear" },
+        { "day": 2, "temp": 21, "humidity": 54, "description": "sunny" },
+        { "day": 3, "temp": 22, "humidity": 53, "description": "warm" },
+        { "day": 4, "temp": 21, "humidity": 55, "description": "clear" },
+        { "day": 5, "temp": 20, "humidity": 56, "description": "cloudy" }
+      ]
+    },
+    {
+      "name": "Sao Paulo",
+      "type": "city",
+      "country": "Brazil",
+      "region": "Tropical",
+      "history": [
+        { "day": 1, "temp": 26, "humidity": 70, "description": "sunny" },
+        { "day": 2, "temp": 27, "humidity": 69, "description": "clear" },
+        { "day": 3, "temp": 26, "humidity": 71, "description": "cloudy" },
+        { "day": 4, "temp": 25, "humidity": 72, "description": "light rain" },
+        { "day": 5, "temp": 26, "humidity": 70, "description": "sunny" }
+      ]
+    },
+    {
+      "name": "Johannesburg",
+      "type": "city",
+      "country": "South Africa",
+      "region": "Subtropical",
+      "history": [
+        { "day": 1, "temp": 21, "humidity": 50, "description": "sunny" },
+        { "day": 2, "temp": 22, "humidity": 48, "description": "clear" },
+        { "day": 3, "temp": 23, "humidity": 47, "description": "warm" },
+        { "day": 4, "temp": 22, "humidity": 49, "description": "clear" },
+        { "day": 5, "temp": 21, "humidity": 51, "description": "cloudy" }
+      ]
+    }
+  ]
+}
